@@ -3,64 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HME SRV</title>
+    <title>Nintenuendo Clone</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>HME SRV</h1>
+        <h1 class="text-center">Nintenuendo Clone</h1>
     </header>
     <main>
-        <div class="container">
-            <div class="box" onclick="window.location='https://plex.tv'">
-                <img src="https://example.com/plex-icon.png" alt="Plex">
-                <h2>Plex</h2>
-                <p>Media Server</p>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card" onclick="window.location='https://plex.tv'">
+                        <img src="https://example.com/plex-icon.png" alt="Plex" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Plex</h5>
+                            <p class="card-text">Media Server</p>
+                            <a href="https://plex.tv" class="btn btn-primary">Accesează</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" onclick="window.location='https://jellyfin.org'">
+                        <img src="https://example.com/jellyfin-icon.png" alt="Jellyfin" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Jellyfin</h5>
+                            <p class="card-text">Media Server Open Source</p>
+                            <a href="https://jellyfin.org" class="btn btn-primary">Accesează</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" onclick="window.location='https://sonarr.tv'">
+                        <img src="https://example.com/sonarr-icon.png" alt="Sonarr" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Sonarr</h5>
+                            <p class="card-text">TV Series Download Manager</p>
+                            <a href="https://sonarr.tv" class="btn btn-primary">Accesează</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" onclick="window.location='https://radarr.video'">
+                        <img src="https://example.com/radarr-icon.png" alt="Radarr" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Radarr</h5>
+                            <p class="card-text">Movies Download Manager</p>
+                            <a href="https://radarr.video" class="btn btn-primary">Accesează</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="box" onclick="window.location='https://jellyfin.org'">
-                <img src="https://example.com/jellyfin-icon.png" alt="Jellyfin">
-                <h2>Jellyfin</h2>
-                <p>Media Server Open Source</p>
-            </div>
-            <div class="box" onclick="window.location='https://sonarr.tv'">
-                <img src="https://example.com/sonarr-icon.png" alt="Sonarr">
-                <h2>Sonarr</h2>
-                <p>TV Series Download Manager</p>
-            </div>
-            <div class="box" onclick="window.location='https://radarr.video'">
-                <img src="https://example.com/radarr-icon.png" alt="Radarr">
-                <h2>Radarr</h2>
-                <p>Movies Download Manager</p>
-            </div>
-            <div class="box" onclick="window.location='https://lidarr.audio'">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-building-fill-slash" viewBox="0 0 16 16">
-  <path d="M13.879 10.414a2.501 2.501 0 0 0-3.465 3.465zm.707.707-3.465 3.465a2.501 2.501 0 0 0 3.465-3.465m-4.56-1.096a3.5 3.5 0 1 1 4.949 4.95 3.5 3.5 0 0 1-4.95-4.95Z"/>
-  <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7.256A4.5 4.5 0 0 0 12.5 8a4.5 4.5 0 0 0-3.59 1.787A.5.5 0 0 0 9 9.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .39-.187A4.5 4.5 0 0 0 8.027 12H6.5a.5.5 0 0 0-.5.5V16H3a1 1 0 0 1-1-1zm2 1.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5m3 0v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5m3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5M7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5M4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"/>
-</svg>
-                <h2>Lidarr</h2>
-                <p>Music Collection Manager</p>
-            </div>
-            <div class="box" onclick="window.location='https://bazarr.media'">
-                <img src="https://example.com/bazarr-icon.png" alt="Bazarr">
-                <h2>Bazarr</h2>
-                <p>Subtitle Management</p>
-            </div>
-            <div class="box" onclick="window.location='https://ombi.app'">
-                <img src="https://example.com/ombi-icon.png" alt="Ombi">
-                <h2>Ombi</h2>
-                <p>Request Management</p>
-            </div>
-            <div class="box" onclick="window.location='https://transmissionbt.com'">
-                <img src="https://example.com/transmission-icon.png" alt="Transmission">
-                <h2>Transmission</h2>
-                <p>Bittorrent Client</p>
-            </div>
+            <!-- Adaugă aici mai multe carduri pentru Lidarr, Bazarr etc. -->
         </div>
     </main>
     <footer>
-        <p>&copy; 2026 HME SRV</p>
+        <p class="text-center">&copy; 2026 Nintenuendo Clone</p>
     </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
-
-
